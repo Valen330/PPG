@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPG acuario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <base href="./">
+
+  
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">PPG</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+              <li class="nav-item">
+                <a class="nav-link" href="#about">Sobre nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Fish">Nuestros peces</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://wa.me/+5491159769100">Contacto</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Servicios
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://wa.me/+5491159769100">Montaje y mantenimiento de acuarios</a></li>
+                  <li><a class="dropdown-item" href="https://wa.me/+5491159769100">Montaje y mantenimiento de estanques</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="https://wa.me/+5491159769100">Consultoría</a></li>
+                </ul>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+    
+      <section id="home">
+        <div id="textCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+        <div class="carousel-inner">
+            <!-- Slide 1: Welcome Message -->
+            <div class="carousel-item active">
+                <div class="carousel-overlay">
+                    <h1 class="display-4">Bienvenidos a PPG Acuario!</h1>
+                </div>
+            </div>
+    
+            <!-- Slide 2: Introduction with Buttons -->
+            <div class="carousel-item">
+                <div class="carousel-overlay">
+                    <p class="lead">Explora nuestra selección de peces y acuarios de alta calidad.</p>
+                    <div class="button-group">
+                        <a href="#peces" class="btn btn-primary btn-lg">Nuestros Peces</a>
+                        <a href="#acuarios" class="btn btn-secondary btn-lg">Nuestros Acuarios</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    </section>
+    
+    
+    <section id="about" class="container-fluid d-flex flex-column align-items-center justify-content-center text-center">
+      <div class="container">
+          <h2 class="mb-4">Sobre Nosotros</h2>
+          <p class="lead">
+            Con más de 16 años de experiencia en la cría y cuidado de peces, nos especializamos en ofrecer ejemplares de excelente sanidad y calidad. Nos apasiona garantizar un entorno saludable para cada especie, utilizando materiales de primera calidad y aplicando los mejores estándares en el mantenimiento y filtrado del agua.
+
+            Además, fabricamos y reparamos peceras, reptileras, terrarios y hámsteras, diseñamos y construimos estanques y fuentes, y brindamos servicios de mantenimiento y armado de filtros para asegurar ecosistemas equilibrados y sostenibles.
+            
+          </p>
+      </div>
+  </section>
+  
+    
+  <section id="Fish">
+    <h2>Peces de agua fría</h2>
+    <p>Explora nuestra selección de peces ideales para acuarios de agua fría.</p>
+
+    <!-- Carrusel -->
+    <div id="fishCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <div class="fish-card">
+                    <img src="images/oranda.jpg" class="d-block w-100" alt="ryunky">
+                    <h3>Oranda 1 </h3>
+                    <p>Los Oranda 1 son peces resistentes y fáciles de cuidar.</p>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <div class="fish-card">
+                    <img src="images/oranda.jpg" class="d-block w-100" alt="Koi">
+                    <h3>Oranda 2 </h3>
+                    <p>Los peces Oranda 2 son populares para estanques y pueden vivir muchos años.</p>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <div class="fish-card">
+                    <img src="images/oranda.jpg" class="d-block w-100" alt="Oranda">
+                    <h3>Oranda 3</h3>
+                    <p>Los peces Oranda 3 son conocidos por sus colores vibrantes y aletas elegantes.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controles del carrusel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#fishCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#fishCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+</section>
+
+
+    
+    <!-- Footer -->
+    <footer class="text-center">
+        <p>&copy; 2025 PPG Acuario | TanWebStudio. <a href="https://wa.me/+54 9 11 5976-9100" class="text-white">WhatsApp</a></p>
+        <p>Horario: 9 AM - 7 PM</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
