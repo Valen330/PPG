@@ -6,7 +6,7 @@ html, body {
 /* Home section - Keep the original background */
 #home {
     height: 100vh;
-    background: url(images/betta-fish-names.png);
+    background: url(/PPG/betta-fish-names.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
