@@ -1,216 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPG acuario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <base href="./">
 
-    <title>TanWeb Studio</title>
-<!--
-
-Template 2097 Pop
-
-https://www.tooplate.com/view/2097-pop
-
--->
-    <!-- load CSS -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300">  <!-- Google web font "Open Sans" -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">                                  <!-- https://getbootstrap.com/ -->
-    <link rel="stylesheet" href="fontawesome/css/fontawesome-all.min.css">                <!-- https://fontawesome.com/ -->
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>                       <!-- https://kenwheeler.github.io/slick/ -->
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    <link rel="stylesheet" href="css/tooplate-style.css">                               <!-- Templatemo style -->
-
-    <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this in a modern browser such as latest version of Chrome or Microsoft Edge.");</script>
-
-
+  
 </head>
-
 <body>
-    <div id="tm-bg"></div>
-    <div id="tm-wrap">
-        <div class="tm-main-content">
-            <div class="container tm-site-header-container">
-                <div class="row">
-                    <div class="col-sm-12 col-md-6 col-lg-6 col-md-col-xl-6 mb-md-0 mb-sm-4 mb-4 tm-site-header-col">
-                        <div class="tm-site-header">
-                            <h1 class="mb-4">TanWeb Studio</h1>
-                            <img src="img/underline.png" class="img-fluid mb-4">
-                            <p>Desarrollo de sitios y aplicaciones web, soporte tecnico continuo, soluciones IT en general. </p>        
-                        </div>                        
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                        <div class="content">
-                            <div class="grid">
-                                <div class="grid__item" id="home-link">
-                                    <div class="product">
-                                        <div class="tm-nav-link">
-                                            <i class="fas fa-home fa-3x tm-nav-icon"></i>
-                                            <span class="tm-nav-text">Inicio</span>
-                                            <div class="product__bg"></div>        
-                                        </div>                                    
-                                        <div class="product__description">
-                                            <div class="row mb-3">
-                                                <div class="col-12">
-                                                    <h2 class="tm-page-title">Transformando ideas en soluciones digitales.</h2>        
-                                                </div>
-                                            </div>                                        
-                                            <div class="row">
-                                                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                                    <p>Bienvenido/a! Soy Valentín, un desarrollador web especializado en la creación de sitios  web y aplicaciones. Con un enfoque en soluciones prácticas y efectivas, te ayudo a impulsar tu presencia digital o a agilizar tus procesos con interfaces faciles de usar. </p>   
-                                                </div>
-                                                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                                    <p>En TanWeb estamos convencidos de que ningun proyecto es igual al anterior, por lo cual apostamos por una atencion personalizada y a medida. Es por esto que  ofrecemos distintos planes que se ajustan a diferentes presupuestos.</p>
-                                                    <p><a rel="nofollow" href=" target="_parent"></a></p>
-                                                </div>                                        
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
 
-                                <div class="grid__item" id="team-link">
-                                    <div class="product">
-                                        <div class="tm-nav-link">
-                                            <i class="fas fa-users fa-3x tm-nav-icon"></i>
-                                            <span class="tm-nav-text">Acerca de</span>
-                                            <div class="product__bg"></div>            
-                                        </div>                                     
-                                        <div class="product__description">
-                                            <div class="p-sm-4 p-2">
-                                                <div class="row mb-3">
-                                                    <div class="col-12">
-                                                        <h2 class="tm-page-title">Sobre nuestros servicios:</h2>        
-                                                    </div>
-                                                </div>
-                                                <div class="row tm-reverse-sm">
-                                                    <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">
-                                                        <p class="mb-2">- Desarrollo de sitios web personalizados</p>
-                                                        <p class="mb-2">- Integración de formularios de contacto</p>
-                                                        <p class="mb-2">- Mantenimiento web</p>
-                                                        <p class="mb-2">- Integración de herramientas y aplicaciones</p>
-                                                        <p class="mb-2">- Rediseño de páginas web</p>
-                                                        </p>
-                                                        
-                                                    </div>                                                
-                                                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-lg-0 mb-sm-4 mb-4">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">PPG</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
 
-                                <div class="grid__item">
-                                    <div class="product">
-                                        <div class="tm-nav-link">
-                                            <i class="fas fa-handshake fa-3x tm-nav-icon"></i>
-                                            <span class="tm-nav-text">Portfolio</span>
-                                            <div class="product__bg"></div>             
-                                        </div>                                                                 
-                                        <div class="product__description">
-                                            <div class="p-sm-4 p-2">
-                                                <div class="row mb-3">
-                                                    <div class="col-12">
-                                                        <h2 class="tm-page-title">Lo que ofrecemos</h2>        
-                                                    </div>
-                                                </div>
-                                                <div class="row mb-3">
-                                                    <div class="col-12">
-                                                        <p> </p>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-12">
-                                                        <div class="p-sm-4 p-2 tm-img-container">
-                                                            <div class="tm-img-slider" id="tmImgSlider">
-                                                              <a href="#" class="tm-slider-img-link"><img src="img/gallery-img-01-tn.jpg" alt="Image 1" class="img-fluid tm-slider-img"></a>
-                                                              <a href="#" class="tm-slider-img-link"><img src="img/gallery-img-02-tn.jpg" alt="Image 2" class="img-fluid tm-slider-img"></a>
-                                                              <a href="#" class="tm-slider-img-link"><img src="img/gallery-img-03-tn.jpg" alt="Image 3" class="img-fluid tm-slider-img"></a>
-                                                              <a href="#" class="tm-slider-img-link"><img src="img/gallery-img-04-tn.jpg" alt="Image 4" class="img-fluid tm-slider-img"></a>
-                                                              <a href="#" class="tm-slider-img-link"><img src="img/gallery-img-05-tn.jpg" alt="Image 5" class="img-fluid tm-slider-img"></a>
-                                                              <a href="#" class="tm-slider-img-link"><img src="img/gallery-img-06-tn.jpg" alt="Image 6" class="img-fluid tm-slider-img"></a>
-                                                            </div>
-                                                        </div>  
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>       
-                                    </div>
-                                </div>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">Sobre nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Fish">Nuestros peces</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://wa.me/+5491159769100">Contacto</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Servicios
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://wa.me/+5491159769100">Montaje y mantenimiento de acuarios</a></li>
+                  <li><a class="dropdown-item" href="https://wa.me/+5491159769100">Montaje y mantenimiento de estanques</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="https://wa.me/+5491159769100">Consultoría</a></li>
+                </ul>
+              </li>
+            </ul>
 
-                                <div class="grid__item">
-                                    <div class="product">
-                                        <div class="tm-nav-link">
-                                            <i class="fas fa-comments fa-3x tm-nav-icon"></i>
-                                            <span class="tm-nav-text">Contacto</span>
-                                            <div class="product__bg"></div>             
-                                        </div>                                                              
-                                        <div class="product__description">
-                                            <div class="pt-sm-4 pb-sm-4 pl-sm-5 pr-sm-5 pt-2 pb-2 pl-3 pr-3">
-                                                <div class="row mb-3">
-                                                    <div class="col-12">
-                                                        <h2 class="tm-page-title">Contacto</h2>        
-                                                    </div>
-                                                </div>
-                                                <div class="row mb-4">
-                                                    <div class="col-12">
-
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-12">
-                                                        <form name="contactform" id="contactform" class="contact-form" action="https://script.google.com/macros/s/AKfycbzrScs8Pph41_8tVyS6tT3-JpCrVaoQgj02cTmXeylwh5La-DjUOcV0zcENdMVSHIbu/exec" method="post">
-                                                            <div class="row">
-                                                                <div class="form-group col-md-6 col-lg-6 col-xl-6">
-                                                                    <input type="text" id="contact_name" name="name" class="form-control" placeholder="Nombre" required />
-                                                                </div>
-                                                                <div class="form-group col-md-6 col-lg-6 col-xl-6 tm-col-email">
-                                                                    <input type="email" id="contact_email" name="email" class="form-control" placeholder="Email" required />
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <textarea id="contact_message" name="message" class="form-control" rows="9" placeholder="Mensaje" required></textarea>
-                                                            </div>
-                                                            <button type="submit" class="btn btn-primary tm-btn-submit">Enviar</button>
-                                                        </form>
-                                                        <div id="response"></div>
-                                                    </div>
-                                                </div>                                                                                              
-                                            </div>                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> 
-                        </div>                       
-                    </div>
-                </div>                
+          </div>
+        </div>
+      </nav>
+    
+      <section id="home">
+        <div id="textCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+        <div class="carousel-inner">
+            <!-- Slide 1: Welcome Message -->
+            <div class="carousel-item active">
+                <div class="carousel-overlay">
+                    <h1 class="display-4">Bienvenidos a PPG Acuario!</h1>
+                </div>
             </div>
-            <footer>
-                <p class="small tm-copyright-text">Copyright &copy; <span class="tm-current-year">2024</span> TanWebStudio.
-                    <a href="https://www.instagram.com/tanweb.studio?igsh=c3plMWRpNjM2ZTQ3" target="_blank" class="social-icon">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/valentin-ferez-509174303/" target="_blank" class="social-icon">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://wa.me/+5491126644533" target="_blank" class="social-icon">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-
-                
-                <a rel="nofollow" href="https://www.tooplate.com" class="tm-text-highlight"></a></p>
-
-            </footer>
-        </div> <!-- .tm-main-content -->  
+    
+            <!-- Slide 2: Introduction with Buttons -->
+            <div class="carousel-item">
+                <div class="carousel-overlay">
+                    <p class="lead">Explora nuestra selección de peces y acuarios de alta calidad.</p>
+                    <div class="button-group">
+                        <a href="#peces" class="btn btn-primary btn-lg">Nuestros Peces</a>
+                        <a href="#acuarios" class="btn btn-secondary btn-lg">Nuestros Acuarios</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- load JS -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>    <!-- https://jquery.com/ -->    
-    <script src="slick/slick.min.js"></script>                             <!-- http://kenwheeler.github.io/slick/ -->  
-    <script src="js/anime.min.js"></script>                                <!-- http://animejs.com/ -->
-    <script src="js/main.js"></script>  
-    <script src="js/contactform.js"></script>
-           
+    
 
+
+    </section>
+    
+    
+    <section id="about" class="container-fluid d-flex flex-column align-items-center justify-content-center text-center">
+      <div class="container">
+          <img src="/images/cometa.jpg" alt="Pez destacado" class="img-fluid rounded shadow" />
+          <h2 class="mb-4">Sobre Nosotros</h2>
+          <p class="lead">
+            Con más de 16 años de experiencia en la cría y cuidado de peces, nos especializamos en ofrecer ejemplares de excelente sanidad y calidad. Nos apasiona garantizar un entorno saludable para cada especie, utilizando materiales de primera calidad y aplicando los mejores estándares en el mantenimiento y filtrado del agua.
+
+            Además, fabricamos y reparamos peceras, reptileras, terrarios y hámsteras, diseñamos y construimos estanques y fuentes, y brindamos servicios de mantenimiento y armado de filtros para asegurar ecosistemas equilibrados y sostenibles.
+            
+          </p>
+      </div>
+  </section>
+  
+    
+  <section id="Fish">
+    <h2>Peces de agua fría</h2>
+    <p>Explora nuestra selección de peces ideales para acuarios de agua fría.</p>
+
+    <!-- Carrusel -->
+    <div id="fishCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <div class="fish-card">
+                    <img src="oranda.jpg" class="d-block w-100" alt="ryunky">
+                    <h3>Oranda 1 </h3>
+                    <p>Los Oranda 1 son peces resistentes y fáciles de cuidar.</p>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <div class="fish-card">
+                    <img src="oranda.jpg" class="d-block w-100" alt="Koi">
+                    <h3>Oranda 2 </h3>
+                    <p>Los peces Oranda 2 son populares para estanques y pueden vivir muchos años.</p>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <div class="fish-card">
+                    <img src="oranda.jpg" class="d-block w-100" alt="Oranda">
+                    <h3>Oranda 3</h3>
+                    <p>Los peces Oranda 3 son conocidos por sus colores vibrantes y aletas elegantes.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controles del carrusel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#fishCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#fishCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+</section>
+
+
+    
+    <!-- Footer -->
+    <footer class="text-center">
+        <p>&copy; 2025 PPG Acuario | TanWebStudio. <a href="https://wa.me/+54 9 11 5976-9100" class="text-white">WhatsApp</a></p>
+        <p>Horario: 9 AM - 7 PM</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
