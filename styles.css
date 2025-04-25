@@ -184,33 +184,6 @@ html, body {
       
 }
 
-/* === SOBRE NOSOTROS SECTION === */
-.about-section {
-    background-color: #f8f9fa; /* Soft light gray background */
-    padding: 80px 0;
-    color: #212529;
-}
-
-.about-section h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #343a40;
-    margin-bottom: 30px;
-}
-
-.about-section p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #555;
-}
-
-/* Image Styling */
-.about-section img {
-    width: 100%;
-    height: auto;
-    border-radius: 16px;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
-}
 
 /* Responsive tweaks */
 @media (max-width: 768px) {
