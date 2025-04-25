@@ -187,18 +187,3 @@ html, body {
 }
 
 
-/* Responsive tweaks */
-@media (max-width: 768px) {
-    .about-section {
-        padding: 60px 15px;
-    }
-
-    .about-section h2 {
-        font-size: 2rem;
-        text-align: center;
-    }
-
-    .about-section p {
-        text-align: justify;
-    }
-}
