@@ -64,8 +64,8 @@
                 <div class="carousel-overlay">
                     <p class="lead">Explora nuestra selección de peces y acuarios de alta calidad.</p>
                     <div class="button-group">
-                        <a href="#peces" class="btn btn-primary btn-lg">Nuestros Peces</a>
-                        <a href="#acuarios" class="btn btn-secondary btn-lg">Nuestros Acuarios</a>
+                        <a href="#Fish" class="btn btn-primary btn-lg">Nuestros Peces</a>
+                        <a href="#aquarium" class="btn btn-secondary btn-lg">Nuestros Acuarios</a>
                     </div>
                 </div>
             </div>
@@ -77,17 +77,25 @@
     </section>
     
     
-    <section id="about" class="container-fluid d-flex flex-column align-items-center justify-content-center text-center">
+    <section id="about" class="about-section py-5">
       <div class="container">
-          <h2 class="mb-4">Sobre Nosotros</h2>
-          <p class="lead">
-            Con más de 16 años de experiencia en la cría y cuidado de peces, nos especializamos en ofrecer ejemplares de excelente sanidad y calidad. Nos apasiona garantizar un entorno saludable para cada especie, utilizando materiales de primera calidad y aplicando los mejores estándares en el mantenimiento y filtrado del agua.
-
-            Además, fabricamos y reparamos peceras, reptileras, terrarios y hámsteras, diseñamos y construimos estanques y fuentes, y brindamos servicios de mantenimiento y armado de filtros para asegurar ecosistemas equilibrados y sostenibles.
-            
-          </p>
+        <div class="row align-items-center g-5">
+          <div class="col-md-6">
+            <img src="images/koi.jpg" alt="Pez destacado" class="img-fluid rounded shadow" />
+          </div>
+          <div class="col-md-6">
+            <h2 class="mb-4">Sobre Nosotros</h2>
+            <p class="lead">
+              Con más de 16 años de experiencia en la cría y cuidado de peces, nos especializamos en ofrecer ejemplares de excelente sanidad y calidad.
+            </p>
+            <p>
+              Fabricamos y reparamos peceras, reptileras, terrarios y hámsteras, diseñamos y construimos estanques y fuentes, y brindamos servicios de mantenimiento y armado de filtros.
+            </p>
+          </div>
+        </div>
       </div>
-  </section>
+    </section>
+    
   
     
   <section id="Fish">
@@ -100,7 +108,7 @@
             <!-- Slide 1 -->
             <div class="carousel-item active">
                 <div class="fish-card">
-                    <img src="https://valen330.github.io/PPG/images/oranda.jpg" class="d-block w-100" alt="ryunky">
+                    <img src="images/oranda.jpg" class="d-block w-100" alt="ryunky">
                     <h3>Oranda 1 </h3>
                     <p>Los Oranda 1 son peces resistentes y fáciles de cuidar.</p>
                 </div>
@@ -108,7 +116,7 @@
             <!-- Slide 2 -->
             <div class="carousel-item">
                 <div class="fish-card">
-                    <img src="https://valen330.github.io/PPG/images/oranda.jpg" class="d-block w-100" alt="Koi">
+                    <img src="images/oranda.jpg" class="d-block w-100" alt="Koi">
                     <h3>Oranda 2 </h3>
                     <p>Los peces Oranda 2 son populares para estanques y pueden vivir muchos años.</p>
                 </div>
@@ -116,7 +124,7 @@
             <!-- Slide 3 -->
             <div class="carousel-item">
                 <div class="fish-card">
-                    <img src="https://valen330.github.io/PPG/images/oranda.jpg" class="d-block w-100" alt="Oranda">
+                    <img src="images/oranda.jpg" class="d-block w-100" alt="Oranda">
                     <h3>Oranda 3</h3>
                     <p>Los peces Oranda 3 son conocidos por sus colores vibrantes y aletas elegantes.</p>
                 </div>
@@ -133,6 +141,51 @@
             <span class="visually-hidden">Siguiente</span>
         </button>
     </div>
+</section>
+
+<section id="aquarium">
+  <h2>Peces de agua fría</h2>
+  <p>Explora nuestra selección de peces ideales para acuarios de agua fría.</p>
+
+  <!-- Carrusel -->
+  <div id="fishCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+              <div class="fish-card">
+                  <img src="images/oranda.jpg" class="d-block w-100" alt="ryunky">
+                  <h3>Pecera 1  </h3>
+                  <p>Breve descripcion de la pecera 1</p>
+              </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+              <div class="fish-card">
+                  <img src="images/oranda.jpg" class="d-block w-100" alt="Koi">
+                  <h3>Pecera 2</h3>
+                  <p>Breve descripcion de la pecera 2</p>
+              </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+              <div class="fish-card">
+                  <img src="images/oranda.jpg" class="d-block w-100" alt="Oranda">
+                  <h3>Pecera 3</h3>
+                  <p>Breve descripcion de la pecera 3</p>
+              </div>
+          </div>
+      </div>
+
+      <!-- Controles del carrusel -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#fishCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#fishCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+      </button>
+  </div>
 </section>
 
 
