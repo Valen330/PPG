@@ -58,6 +58,11 @@ html, body {
 
 /* Mobile-specific styles */
 @media (max-width: 768px) { 
+        #home {
+        background: url(images/betta-fish-names.png) no-repeat center center ;
+        background-size: cover;
+        background-position: left 40%;
+    }
     #textCarousel {
         top: 40%; /* Moves it higher */
         transform: translate(-50%, -40%); /* Adjusted translation */
