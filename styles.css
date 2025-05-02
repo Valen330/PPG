@@ -1,14 +1,14 @@
 /* Ensure the body background is only for the home section */
 html, body {
     background: none; /* Remove global background */
-     max-width: 100%;
+    max-width: 100%;
     overflow-x: hidden;
 }
 
 /* Home section - Keep the original background */
 #home {
     height: 100vh;
-    background: url(https://valen330.github.io/PPG/images/betta-fish-names.png);
+    background: url(images/betta-fish-names.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -85,7 +85,144 @@ html, body {
         font-size: 1.5rem;
         font-weight: bold;
     }
+    /* General section padding and titles */
+section {
+    padding: 4rem 1rem;
+    background-color: #f9f9f9;
+    scroll-margin-top: 70px;
+  }
+  
+  section:nth-of-type(even) {
+    background-color: #ffffff;
+  }
+  
+  section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+  }
+  
+ .about-text{
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+  }
+  
+  /* About image */
+  .about-section img {
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Carousel item styles */
+  .carousel-item {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .fish-card {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+  }
+  
+  .fish-card img {
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    max-height: 280px;
+    object-fit: cover;
+  }
+  
+  .fish-card h3 {
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+    color: #222;
+    font-weight: 600;
+  }
+  
+  .fish-card p {
+    color: #666;
+    font-size: 0.95rem;
+  }
+  
+  /* Carousel arrows (make them more visible if needed) */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: invert(1);
+  }
+  
+  /* Responsive tweaks */
+
+    .about-section .row {
+      text-align: center;
+    }
+  
+    .about-section img {
+      max-width: 80%;
+      margin-bottom: 1.5rem;
+    }
+    
+    .aquarium-card {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 1.5rem;
+        background: #fff;
+        border-radius: 1rem;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+      }
+      
+      .aquarium-card img {
+        border-radius: 0.5rem;
+        margin-bottom: 1rem;
+        max-height: 280px;
+        object-fit: cover;
+      }
+      
+      .aquarium-card h3 {
+        font-size: 1.25rem;
+        margin-top: 0.5rem;
+        color: #222;
+        font-weight: 600;
+      }
+      
+      .aquarium-card p {
+        color: #666;
+        font-size: 0.95rem;
+      }
+      
+      /* Carousel arrows (make them more visible if needed) */
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        filter: invert(1);
+      }
+      
+      /* Responsive tweaks */
+    
+        .about-section .row {
+          text-align: center;
+        }
+      
+        .about-section img {
+          max-width: 80%;
+          margin-bottom: 1.5rem;
+        }
+        
 }
+
+footer {
+    background-color: #222; /* dark gray (original vibe) */
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+
 
 /* === Desktop-only carousel enhancements === */
 @media (min-width: 769px) {
@@ -126,7 +263,7 @@ html, body {
         height: 600px;
         object-fit: cover;
     }
-    @media (min-width: 769px) {
+
     #aquarium {
         text-align: center;
         padding: 80px 20px;
@@ -165,80 +302,105 @@ html, body {
         object-fit: cover;
     }
 
+    /* === Sobre Nosotros (About) Section Styling === */
+    #about {
+        padding: 80px 0;
+        background-color: #f9f9f9;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+    }
 
-/* === Sobre Nosotros (About) Section Styling === */
-#about {
-    padding: 80px 0;
-    background-color: #f9f9f9; /* Light background */
-    min-height: 100vh; /* Ensures the section takes at least full viewport height */
-    display: flex;
-    align-items: center; /* Vertically center content */
-    justify-content: center; /* Horizontally center content */
-    flex-direction: column;
-}
-
-#about .container {
-    display: flex;
-    flex-direction: column; /* Stack items on small screens */
-    align-items: center;
-    justify-content: center;
-    gap: 60px;
-    max-width: 1100px;
-    text-align: center; /* Center text */
-}
-
-/* Title */
-#about h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-/* Paragraph */
-#about p {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    color: #555;
-    max-width: 800px;
-    margin: 0 auto; /* Centers text */
-}
-
-/* Image Styling */
-#about img {
-    width: 100%;
-    max-width: 500px; /* Limits image size */
-    height: auto;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
-
-/* Responsive styling */
-@media (max-width: 768px) {
     #about .container {
-        flex-direction: column; /* Stack items on smaller screens */
-        padding: 20px; /* Add padding for mobile */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+        max-width: 1100px;
     }
 
     #about h2 {
-        font-size: 2rem;
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #333;
+        text-align: left;
     }
 
     #about p {
-        font-size: 1rem; /* Make text smaller on mobile */
-        text-align: justify; /* Justify text for readability */
+        font-size: 1.1rem;
+        line-height: 1.7;
+        color: #555;
+        text-align: left;
     }
 
-    #about img {
-        max-width: 100%; /* Ensure image doesn't overflow */
+    #about .about-text {
+        flex: 1;
+    }
+
+    #about .about-image {
+        flex: 1;
+        max-width: 500px;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    #about .about-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+    }
+    footer {
+        background-color: #222; /* dark gray (original vibe) */
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+      
+}
+
+/* === SOBRE NOSOTROS SECTION === */
+.about-section {
+    background-color: #f8f9fa; /* Soft light gray background */
+    padding: 80px 0;
+    color: #212529;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #343a40;
+    margin-bottom: 30px;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Image Styling */
+.about-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 60px 15px;
+    }
+
+    .about-section h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .about-section p {
+        text-align: justify;
     }
 }
-
-/* Footer Styling */
-footer {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
