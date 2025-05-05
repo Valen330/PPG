@@ -12,7 +12,7 @@ html, body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    display: flex;
+    display: flex ;
     align-items: center;
     justify-content: center;
 }
@@ -56,9 +56,49 @@ html, body {
     gap: 10px;
 }
 
+/* Transparent buttons with thinner, more delicate frames */
+.carousel-overlay .btn {
+    background-color: transparent; /* Transparent background */
+    border: 1px solid #fff; /* Thinner, more delicate border */
+    color: #fff; /* White text */
+    font-size: 1.2rem; /* Adjust font size for readability */
+    padding: 8px 18px; /* Slightly smaller padding for a refined look */
+    border-radius: 5px; /* Slightly rounded corners */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for the buttons */
+.carousel-overlay .btn:hover {
+    background-color: #fff; /* Change background to white on hover */
+    color: #000; /* Change text color to black on hover */
+    border-color: #fff; /* Keep the border white */
+}
+
+/* Style for the first button ("Nuestros Peces") */
+.carousel-overlay .btn-primary {
+    border-color: #ffffff; /* Tomato red border */
+    color: #ffffff; /* Tomato red text */
+}
+
+.carousel-overlay .btn-primary:hover {
+    background-color: #000000; /* Tomato red background on hover */
+    color: #fff; /* White text on hover */
+}
+
+/* Style for the second button ("Nuestros Acuarios") */
+.carousel-overlay .btn-secondary {
+    border-color: #ffffff; /* Dodger blue border */
+    color: #ffffff; /* Dodger blue text */
+}
+
+.carousel-overlay .btn-secondary:hover {
+    background-color: #ffffff; /* Dodger blue background on hover */
+    color: #000000; /* White text on hover */
+}
+
 /* Mobile-specific styles */
 @media (max-width: 768px) { 
-        #home {
+    #home {
         background: url(images/betta-fish-names.png) no-repeat center center ;
         background-size: cover;
         background-position: left 40%;
@@ -257,6 +297,7 @@ footer {
         margin: 0 auto;
         padding: 40px 0;
     }
+    
 
     #fishCarousel .carousel-inner {
         border-radius: 20px;
@@ -305,6 +346,78 @@ footer {
     #aquariumCarousel .carousel-item img {
         height: 600px;
         object-fit: cover;
+    }
+
+    /* Fix image fitting for Fish and Aquarium Carousels */
+    #fishCarousel .carousel-item img,
+    #aquariumCarousel .carousel-item img {
+        width: 100%; /* Ensure the image spans the full width of the card */
+        height: auto; /* Maintain the aspect ratio */
+        max-height: 400px; /* Prevent the image from being too tall */
+        object-fit: contain; /* Ensure the entire image is visible without cropping */
+    }
+
+    /* Adjust carousel width */
+    #fishCarousel,
+    #aquariumCarousel {
+        max-width: 900px; /* Reduce the width of the carousel */
+        margin: 0 auto; /* Center the carousel */
+    }
+
+    /* Style carousel control buttons */
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        filter: invert(0.5); /* Make the icons gray */
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        background-color: rgba(0, 0, 0, 0.1); /* Add a subtle gray background to the buttons */
+        border-radius: 50%; /* Make the buttons circular */
+        width: 40px; /* Adjust button size */
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carousel-control-prev:hover,
+    .carousel-control-next:hover {
+        background-color: rgba(0, 0, 0, 0.2); /* Darken the background on hover */
+    }
+
+    /* Move carousel controls inside the carousel */
+    .carousel-control-prev,
+    .carousel-control-next {
+        position: absolute;
+        top: 50%; /* Center vertically */
+        transform: translateY(-50%); /* Adjust for proper centering */
+        width: 40px; /* Adjust button size */
+        height: 40px;
+        background-color: rgba(0, 0, 0, 0.1); /* Subtle gray background */
+        border-radius: 50%; /* Circular buttons */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10; /* Ensure controls are above the carousel content */
+    }
+
+    .carousel-control-prev {
+        left: 10px; /* Position slightly inside the left edge */
+    }
+
+    .carousel-control-next {
+        right: 10px; /* Position slightly inside the right edge */
+    }
+
+    .carousel-control-prev:hover,
+    .carousel-control-next:hover {
+        background-color: rgba(0, 0, 0, 0.2); /* Darken on hover */
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        filter: invert(0.5); /* Make the icons gray */
     }
 
     /* === Sobre Nosotros (About) Section Styling === */
@@ -408,4 +521,40 @@ footer {
     .about-section p {
         text-align: justify;
     }
+}
+
+.navbar-brand img {
+    height: 60px; /* Set the desired height for the logo */
+    width: auto; /* Maintain the aspect ratio */
+    max-height: none; /* Remove any inherited max-height constraints */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center; /* Vertically center the logo */
+    max-height: none; /* Remove any height constraints */
+}
+
+.navbar {
+    min-height: 70px; /* Set the desired height for the navbar */
+    padding: 0.5rem 1rem; /* Adjust padding to make it smaller */
+    display: flex;
+    align-items: center; /* Vertically center the content */
+}
+
+/* Style the dropdown menu to match the navbar */
+.navbar-dark .dropdown-menu {
+    background-color: #343a40; /* Match the navbar's dark background color */
+    border: none; /* Remove the border */
+}
+
+.navbar-dark .dropdown-menu .dropdown-item {
+    color: #fff; /* White text for dropdown items */
+}
+
+.navbar-dark .dropdown-menu .dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle hover effect */
+    color: #fff; /* Keep text white on hover */
 }
